@@ -10,7 +10,8 @@ router=APIRouter(
 )
 
 @router.post("/",status_code=status.HTTP_201_CREATED, response_model=schemas.UserReponseOutPut)
-def create_user(user:schemas.UserCreate, db:Session=Depends(get_db),current_user=Depends(oauth2.get_current_user)):
+# def create_user(user:schemas.UserCreate, db:Session=Depends(get_db),current_user=Depends(oauth2.get_current_user)):
+def create_user(user:schemas.UserCreate, db:Session=Depends(get_db)):
 
     #Check if email exists
     # email_exist=utils.verify_email_exists(user.email)
