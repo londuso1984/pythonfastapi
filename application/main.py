@@ -27,7 +27,7 @@ app.add_middleware(
 
 @app.get("/")
 def root():
-    return {"message": "Welcome to my FastAPI"}
+    return {"message": "Welcome to my FastAPI Cooooool 2022"}
 
 #this goes and find the path operetion API and work normally
 app.include_router(post.router) 
