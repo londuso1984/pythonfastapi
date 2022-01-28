@@ -2,8 +2,8 @@ name: Build and Deploy
 
 on: [push, pull_request]
 
-job:
-  job_1:
+jobs:
+  job1:
     runs-on: ubuntu-latest
     steps:
       - name: pulling git repo
