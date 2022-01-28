@@ -9,7 +9,7 @@ jobs:
       - name: pulling git repo
         uses: actions/checkout@v2 # actions/checkout@v2 command pulls our code
       - name: Install Python 3.9
-        uses: actions/set-python@v2 # this installs python
+        uses: actions/setup-python@v2 # this installs python
         with:
           python-version: "3.9"
       - name: Upgrade pip
