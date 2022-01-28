@@ -1,0 +1,12 @@
+name: Build and Deploy
+
+on: [push, pull_request]
+
+job:
+  job_1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pulling git repo
+        uses: actions/checkout@v2 # actions/checkout@v2 command pulls our code
+      - name: Livingstone Example
+        run: echo Livingstone Example
