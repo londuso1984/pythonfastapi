@@ -8,5 +8,12 @@ jobs:
     steps:
       - name: pulling git repo
         uses: actions/checkout@v2 # actions/checkout@v2 command pulls our code
-      - name: Livingstone Example
-        run: echo Livingstone Example
+      - name: Install Python 3.9
+        uses: actions/set-python@v2 # this installs python
+        with:
+          python-version: "3.9"
+      - name: Upgrade pip
+        run: python -m pip install --upgrade pip
+      - name: Install All Depedencies
+        run: pip install -r requirements.txt
+        
