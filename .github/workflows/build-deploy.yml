@@ -17,7 +17,7 @@ jobs:
       - name: Install All Depedencies
         run: pip install -r requirements.txt
       - name: test with pytest
-        run: | # the pipe allows you run muliple commands for this case[pip install pytest and pytest -v -s]
-         pip install pytest-github-actions-annotate-failures
+        run: | 
+         pip install pytest-github-actions-annotate-failures 
          pytest
         
