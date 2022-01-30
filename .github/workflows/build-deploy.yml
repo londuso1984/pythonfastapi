@@ -48,4 +48,4 @@ jobs:
       - name: test with pytest
         run: |
           pip install pytest
-          python -m pytest --import-mode=append tests/
+          python -m pytest
