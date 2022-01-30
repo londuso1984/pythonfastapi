@@ -48,4 +48,4 @@ jobs:
       - name: test with pytest
         run: |
           pip install pytest
-          pytest -o "testpaths=tests othertests doc"
+          pytest -v
