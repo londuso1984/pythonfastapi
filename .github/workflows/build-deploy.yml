@@ -9,7 +9,7 @@ jobs:
       name: testing # pulls the environment variables from github {setting>>>environments section}
 
     #option 2 of pulling environment variables
-      env:
+    env:
         DATABASE_HOSTNAME=${{secrets.DATABASE_HOSTNAME}}
         DATABASE_PORT=${{secrets.DATABASE_PORT}}
         DATABASE_PASSWORD=${{secrets.DATABASE_PASSWORD}}
@@ -18,7 +18,7 @@ jobs:
         JWT_SECRET_KEY=${{secrets.JWT_SECRET_KEY}}
         ALGORITHIM=${{secrets.ALGORITHIM}}
         ACCESS_TOKEN_EXPIRE_MINUTES=${{secrets.ACCESS_TOKEN_EXPIRE_MINUTES}}
-        
+
     runs-on: ubuntu-latest
     steps:
       - name: pulling git repo
