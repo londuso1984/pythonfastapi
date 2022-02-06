@@ -78,8 +78,6 @@ jobs:
       name: production_env # pulls the environment variables from github {setting>>>environments section}
 
     steps:
-     - name: pulling git repo
-       uses: actions/checkout@v2
      - name: Deploying To Heroku
        uses: actions/checkout@v2
        uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
